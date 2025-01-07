@@ -1,5 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
+    "rewrites": [
+      { "source": "/custom-route", "destination": "/iqindex.html" }
+    ],
+    "redirects": [
+      { "source": "/old-path", "destination": "/new-path", "permanent": true }
+    ]
+  }
