@@ -76,7 +76,8 @@
             }
         }
     });
-    // Number Counter Animation
+
+    // Number Counter Animation with Symbols
 var counterAnimated = false; // Flag to prevent repeated animations
 $(window).scroll(function () {
     var statisticsSection = $("#statistics");
@@ -85,7 +86,10 @@ $(window).scroll(function () {
         if (!counterAnimated && $(window).scrollTop() > sectionOffset) {
             $(".stat-number").each(function () {
                 var $this = $(this);
-                var targetNumber = parseFloat($this.text().replace(/,/g, '')); // Remove commas or non-numeric characters
+                var targetText = $this.text(); // Original text with symbols
+                var targetNumber = parseFloat(targetText.replace(/[^0-9.]/g, '')); // Extract the numeric part
+                var suffix = targetText.replace(/[0-9.]/g, ''); // Extract the symbol (e.g., +, K)
+
                 if (!isNaN(targetNumber)) { // Ensure it's a valid number
                     $({ Counter: 0 }).animate(
                         { Counter: targetNumber },
@@ -93,7 +97,7 @@ $(window).scroll(function () {
                             duration: 2000,
                             easing: "swing",
                             step: function (now) {
-                                $this.text(Math.ceil(now).toLocaleString()); // Format with commas
+                                $this.text(Math.ceil(now).toLocaleString() + suffix); // Add back the suffix
                             },
                         }
                     );
@@ -103,6 +107,7 @@ $(window).scroll(function () {
         }
     }
 });
+
 
 
     
