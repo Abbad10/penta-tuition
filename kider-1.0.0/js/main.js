@@ -76,30 +76,38 @@
             }
         }
     });
-     // Number Counter Animation
-    var counterAnimated = false; // Flag to prevent repeated animations
-    $(window).scroll(function () {
-        var statisticsSection = $("#statistics");
-        if (statisticsSection.length > 0) {
-            var sectionOffset = statisticsSection.offset().top - window.innerHeight;
-            if (!counterAnimated && $(window).scrollTop() > sectionOffset) {
-                $(".stat-number").each(function () {
-                    var $this = $(this);
+    // Number Counter Animation
+var counterAnimated = false; // Flag to prevent repeated animations
+$(window).scroll(function () {
+    var statisticsSection = $("#statistics");
+    if (statisticsSection.length > 0) {
+        var sectionOffset = statisticsSection.offset().top - window.innerHeight;
+        if (!counterAnimated && $(window).scrollTop() > sectionOffset) {
+            $(".stat-number").each(function () {
+                var $this = $(this);
+                var targetNumber = parseFloat($this.text().replace(/,/g, '')); // Remove commas or non-numeric characters
+                if (!isNaN(targetNumber)) { // Ensure it's a valid number
                     $({ Counter: 0 }).animate(
-                        { Counter: $this.text() },
+                        { Counter: targetNumber },
                         {
                             duration: 2000,
                             easing: "swing",
                             step: function (now) {
-                                $this.text(Math.ceil(now));
+                                $this.text(Math.ceil(now).toLocaleString()); // Format with commas
                             },
                         }
                     );
-                });
-                counterAnimated = true; // Prevent animation from running again
-            }
+                }
+            });
+            counterAnimated = true; // Prevent animation from running again
         }
-    });
+    }
+});
+
+
+    
+                
+
     
 })(jQuery);
 
