@@ -48,6 +48,9 @@
         dots: true,
         loop: true,
         nav : true,
+        autoHeight: false, // Ensure height is not set dynamically
+        margin: 0, // Remove unwanted margin
+    
         navText : [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
