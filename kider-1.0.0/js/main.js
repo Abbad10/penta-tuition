@@ -76,6 +76,30 @@
             }
         }
     });
+     // Number Counter Animation
+    var counterAnimated = false; // Flag to prevent repeated animations
+    $(window).scroll(function () {
+        var statisticsSection = $("#statistics");
+        if (statisticsSection.length > 0) {
+            var sectionOffset = statisticsSection.offset().top - window.innerHeight;
+            if (!counterAnimated && $(window).scrollTop() > sectionOffset) {
+                $(".stat-number").each(function () {
+                    var $this = $(this);
+                    $({ Counter: 0 }).animate(
+                        { Counter: $this.text() },
+                        {
+                            duration: 2000,
+                            easing: "swing",
+                            step: function (now) {
+                                $this.text(Math.ceil(now));
+                            },
+                        }
+                    );
+                });
+                counterAnimated = true; // Prevent animation from running again
+            }
+        }
+    });
     
 })(jQuery);
 
