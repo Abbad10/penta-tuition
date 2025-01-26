@@ -244,6 +244,14 @@ h6,
     display: flex;
     flex-direction: column;
 }
+.header-carousel {
+    margin-bottom: 0; /* Reset any extra bottom margin */
+}
+
+.container-fluid {
+    padding-bottom: 0; /* Remove unnecessary padding */
+}
+
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
