@@ -782,7 +782,7 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-/*.cta .btn:hover {
+.cta .btn:hover {
     background-color: #5753a4;
 }
 
