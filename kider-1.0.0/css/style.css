@@ -582,3 +582,79 @@ h6,
     text-align: center;
 }
 
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f8;
+}
+
+.chess-classes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #eaeaff;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f0f0ff;
+    color: #5a00ff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #5a00ff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #ffd700;
+    color: #212121;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
