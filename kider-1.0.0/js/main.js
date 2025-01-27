@@ -109,16 +109,6 @@ $(window).scroll(function () {
         }
     }
 });
-document.querySelector('.dropdown').addEventListener('click', function () {
-    const hiddenFeatures = document.querySelectorAll('.feature.hidden');
-    const dropdown = this;
-
-    hiddenFeatures.forEach(feature => {
-        feature.classList.toggle('visible'); // Show/hide the features
-    });
-
-    dropdown.classList.toggle('open'); // Toggle dropdown arrow
-});
 
 
 
