@@ -654,7 +654,7 @@ h1 {
     display: inline-block;
 }
 
-.btn-primary {
+/*.btn-primary {
     background-color: #5a00ff;
     color: white;
 }
@@ -774,7 +774,7 @@ h1 {
     display: inline-block;
     padding: 12px 25px;
     font-size: 1rem;
-    background-color: #6a67ce;
+    background-color:#FFFFFF ;
     color: #fff;
     text-transform: uppercase;
     border-radius: 5px;
@@ -782,7 +782,7 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.cta .btn:hover {
+/*.cta .btn:hover {
     background-color: #5753a4;
 }
 
