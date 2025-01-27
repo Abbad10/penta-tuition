@@ -582,24 +582,31 @@ h6,
     text-align: center;
 }
 
+/* General Body Styles */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f8;
+    line-height: 1.6;
 }
 
+/* Chess Classes Section */
 .chess-classes {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
     padding: 2rem;
     background-color: #eaeaff;
     border-radius: 10px;
     margin: 2rem;
+    gap: 2rem; /* Adds spacing between content and image */
 }
 
+/* Content Section */
 .content {
-    max-width: 50%;
+    flex: 1;
+    max-width: 600px; /* Sets a maximum width for better scaling */
 }
 
 h1 {
@@ -633,6 +640,7 @@ h1 {
 
 .buttons {
     display: flex;
+    flex-wrap: wrap; /* Buttons will wrap on smaller screens */
     gap: 1rem;
 }
 
@@ -642,6 +650,8 @@ h1 {
     border-radius: 5px;
     font-weight: bold;
     font-size: 1rem;
+    text-align: center;
+    display: inline-block;
 }
 
 .btn-primary {
@@ -654,7 +664,47 @@ h1 {
     color: #212121;
 }
 
+/* Image Section */
+.image {
+    flex: 1;
+    max-width: 500px; /* Limit the image's maximum width */
+}
+
 .image img {
-    max-width: 100%;
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
+    object-fit: cover; /* Ensures proper image scaling */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chess-classes {
+        flex-direction: column; /* Stacks content and image vertically */
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .content, .image {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem; /* Adjust button size */
+        font-size: 0.9rem;
+    }
 }
