@@ -132,11 +132,11 @@ h6,
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 6px 0;
     }
 
     .navbar .navbar-nav {
-        margin-top: 15px;
+        margin-top: 10px;
         border-top: 1px solid #EEEEEE;
     }
 }
@@ -255,9 +255,9 @@ h6,
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
+    margin: 0px 0;
     width: 45px;
-    height: 45px;
+    height: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
