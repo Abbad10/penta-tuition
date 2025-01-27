@@ -809,3 +809,72 @@ h1 {
         padding: 10px 20px;
     }
 }
+
+/* Curriculum Section Styling */
+.curriculum {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: 2px solid #6a67ce;
+    border-radius: 5px;
+    background: #fff;
+    color: #6a67ce;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background: #6a67ce;
+    color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+    border: 2px solid #6a67ce;
+    border-radius: 5px;
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: left;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.tab-pane li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
