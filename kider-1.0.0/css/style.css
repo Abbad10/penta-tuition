@@ -842,4 +842,10 @@ h1 {
         display: block; /* Shows hidden features when dropdown is open */
     }
 }
+/* Hide the dropdown in desktop view */
+@media (min-width: 769px) {
+    .dropdown {
+        display: none; /* Completely remove dropdown in larger screens */
+    }
+}
 
