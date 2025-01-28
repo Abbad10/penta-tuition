@@ -917,5 +917,78 @@ h1 {
 }
 
 
+/* General Styling */
+.course-fees {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Region Selector */
+.region-selector {
+  margin-bottom: 15px;
+}
+
+.region-selector button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.region-selector .active {
+  background: #6200ea;
+  color: white;
+}
+
+/* Fee Details */
+.fee-details {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Options */
+.course-option {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide Non-Selected Fee Details */
+.hidden {
+  display: none;
+}
+
+/* Enroll & PayPal Buttons */
+.enroll-btn {
+  background: #ff9800;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.enroll-btn:hover {
+  background: #e68900;
+}
+
+/* Refund Policy */
+.refund-policy {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
 
 
