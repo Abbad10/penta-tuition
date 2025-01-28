@@ -96,6 +96,24 @@ tabButtons.forEach(button => {
     });
 });
 
+    // Function to update fee details based on region
+function updateFees(region) {
+  document.getElementById("indian-fees").classList.add("hidden");
+  document.getElementById("international-fees").classList.add("hidden");
+
+  document.getElementById(`${region}-fees`).classList.remove("hidden");
+
+  document.getElementById("indian-fees-btn").classList.remove("active");
+  document.getElementById("international-fees-btn").classList.remove("active");
+
+  document.getElementById(`${region}-fees-btn`).classList.add("active");
+}
+
+// Event Listeners for Region Selection
+document.getElementById("indian-fees-btn").addEventListener("click", () => updateFees("indian"));
+document.getElementById("international-fees-btn").addEventListener("click", () => updateFees("international"));
+
+
 
     // Number Counter Animation with Symbols
 var counterAnimated = false; // Flag to prevent repeated animations
