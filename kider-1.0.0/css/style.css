@@ -918,24 +918,28 @@ h1 {
 
 
 /* General Styling */
+/* General Styling */
 .course-fees {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  background: #f8f9fa;
 }
 
 /* Region Selector */
 .region-selector {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .region-selector button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   margin: 5px;
   border: none;
   cursor: pointer;
-  background: #f0f0f0;
+  background: #e0e0e0;
   font-size: 16px;
+  font-weight: bold;
   border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .region-selector .active {
@@ -943,23 +947,60 @@ h1 {
   color: white;
 }
 
-/* Fee Details */
-.fee-details {
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 10px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.region-selector button:hover {
+  background: #6200ea;
+  color: white;
 }
 
-/* Course Options */
-.course-option {
+/* Fee Details */
+.fee-details {
   background: #fff;
-  padding: 15px;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Option Boxes */
+.course-option {
+  background: #ffffff;
+  padding: 20px;
   margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-option:hover {
+  transform: translateY(-5px);
+}
+
+/* Fee Table */
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fee-table th, .fee-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.fee-table th {
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+.fee-table tr:nth-child(even) {
+  background: #f9f9f9;
 }
 
 /* Hide Non-Selected Fee Details */
@@ -967,28 +1008,58 @@ h1 {
   display: none;
 }
 
-/* Enroll & PayPal Buttons */
+/* Enroll Button */
 .enroll-btn {
   background: #ff9800;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 18px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .enroll-btn:hover {
   background: #e68900;
+  transform: scale(1.05);
 }
 
 /* Refund Policy */
 .refund-policy {
   font-size: 14px;
   color: #666;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-weight: bold;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fee-table th, .fee-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
 
+  .enroll-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 
+  .region-selector button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 
+  .fee-details {
+    padding: 20px;
+  }
+}
+
+/* Footer Text */
+.footer-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
