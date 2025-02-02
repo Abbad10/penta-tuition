@@ -99,7 +99,7 @@ h6,
 
 /*** Navbar ***/
 .navbar .navbar-nav .nav-link {
-    padding: 0px 0px;
+    padding: 30px 15px;
     color: var(--dark);
     font-weight: 500;
     outline: none;
