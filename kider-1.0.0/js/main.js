@@ -72,6 +72,7 @@
         responsive: {
             0:{
                 items:1
+                autoHeight: true
             },
             992:{
                 items:2
