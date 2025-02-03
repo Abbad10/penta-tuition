@@ -1230,5 +1230,32 @@ h1 {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.1); /* Light background */
 }
+ /* Ensure Carousel Images Fit Properly */
+.owl-carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the full image is visible */
+}
+
+/* Adjust for Mobile View */
+@media (max-width: 768px) {
+  .owl-carousel-item img {
+    height: 300px; /* Adjust height as needed */
+    object-fit: contain; /* Prevents cropping */
+  }
+
+  .position-absolute {
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay for better text visibility */
+  }
+
+  .display-2 {
+    font-size: 1.8rem; /* Reduce text size for smaller screens */
+  }
+
+  .fs-5 {
+    font-size: 1rem; /* Adjust paragraph text */
+  }
+}
+
 
 }
