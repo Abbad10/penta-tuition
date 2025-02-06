@@ -1230,20 +1230,16 @@ h1 {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.1); /* Light background */
 }
-.card {
+.course-card {
     border-radius: 10px;
-    transition: 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card:hover {
+.course-card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-    .card {
-        padding: 15px;
-    }
-}
 
 
 }
