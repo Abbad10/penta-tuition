@@ -24,26 +24,7 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    document.getElementById("techCourseButton").addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor action
-
-    // Get the Tech Courses dropdown element
-    let techCoursesDropdown = document.getElementById("techCoursesDropdown");
-
-    // Check if the dropdown is already open
-    let isDropdownOpen = techCoursesDropdown.classList.contains("show");
-
-    // Close all other dropdowns first
-    document.querySelectorAll(".dropdown-menu.show").forEach((dropdown) => {
-        dropdown.classList.remove("show");
-    });
-
-    // Open the Tech Courses dropdown if it was not already open
-    if (!isDropdownOpen) {
-        techCoursesDropdown.classList.add("show");
-    }
-});
-
+    
     
     // Back to top button
     $(window).scroll(function () {
