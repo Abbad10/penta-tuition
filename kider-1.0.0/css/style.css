@@ -1267,77 +1267,112 @@ h1 {
 }
 
 
-.card-container {
+/* Section Styling */
+.course-level {
+    margin: 40px 0;
+}
+
+.level-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.session-info {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Cards Container */
+.cards-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns in a row */
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
     gap: 20px;
-    justify-content: center;
-    align-items: center;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 10px;
-}
-
-/* Individual Card */
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
-    height: 180px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+/* Individual Cards */
+.card {
+    background: #ffe5e5;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
-/* Icons */
-.icon {
-    font-size: 50px;
-    color: #ff6b6b;
+.card i {
+    font-size: 40px;
+    color: #ff6600;
     margin-bottom: 10px;
 }
 
-/* Demo Button */
-.demo-button-container {
-    margin-top: 30px;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.demo-button {
-    display: inline-block;
-    background-color: #28a745;
+/* Join Our Class Button */
+.join-class-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.join-class-button {
+    background-color: #ff6600;
     color: white;
-    padding: 12px 25px;
+    padding: 15px 25px;
+    border-radius: 8px;
     font-size: 18px;
     text-decoration: none;
-    border-radius: 30px;
-    transition: background 0.3s;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
 }
 
-.demo-button:hover {
-    background-color: #218838;
+.join-class-button:hover {
+    background-color: #cc5500;
 }
 
-/* Fix for Tablets */
-@media screen and (max-width: 900px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-        max-width: 700px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
     }
 }
 
-/* Fix for Mobile */
-@media screen and (max-width: 600px) {
-    .card-container {
-        grid-template-columns: 1fr; /* 1 card per row */
-        max-width: 300px;
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
     }
+}
+/* FinFIT Program Structure */
+.program-structure {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.program-structure h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.program-structure p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.program-structure hr {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
 }
 
 
