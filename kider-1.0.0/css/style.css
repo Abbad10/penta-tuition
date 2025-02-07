@@ -1267,20 +1267,19 @@ h1 {
 }
 
 
-/* Card Container - Ensures 4 Cards in a Row */
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns in a row */
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
     margin: 20px auto;
-    max-width: 900px;
+    padding: 10px;
 }
 
 /* Individual Card */
 .card {
-    width: 200px;
-    height: 200px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1288,7 +1287,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
+    height: 180px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -1324,29 +1324,21 @@ h1 {
     background-color: #218838;
 }
 
-/* Responsive - Ensure 4 cards per row on large screens */
+/* Fix for Tablets */
 @media screen and (max-width: 900px) {
     .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
         max-width: 700px;
     }
-    .card {
-        width: 180px;
-        height: 180px;
-    }
 }
 
+/* Fix for Mobile */
 @media screen and (max-width: 600px) {
     .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        width: 100%;
-        max-width: 250px;
+        grid-template-columns: 1fr; /* 1 card per row */
+        max-width: 300px;
     }
 }
-
-
 
 
 }
