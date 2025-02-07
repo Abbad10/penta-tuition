@@ -63,16 +63,18 @@
 	    <a href="chess.html" class="nav-item nav-link">Chess Classes</a>
 
              <!-- Classes Dropdown -->
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tech Courses</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                    
-                    <a href="pythonforkids.html" class="dropdown-item">Python Programming</a>
-                    <a href="scratch.html" class="dropdown-item">Scratch Programming for Kids</a>
-                    <a href="webdev.html" class="dropdown-item">Web Development</a>
-                    <a href="aiforkids.html" class="dropdown-item">Ai & Data Science</a>
-                </div>
-            </div>
+             <div class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="techCoursesToggle">
+        Tech Courses
+    </a>
+    <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0" id="techCoursesDropdown">
+        <a href="pythonforkids.html" class="dropdown-item">Python Programming</a>
+        <a href="scratch.html" class="dropdown-item">Scratch Programming for Kids</a>
+        <a href="webdev.html" class="dropdown-item">Web Development</a>
+        <a href="aiforkids.html" class="dropdown-item">AI & Data Science</a>
+    </div>
+</div>
+
             <!-- End of Classes Dropdown -->
 	    	
             
@@ -113,45 +115,62 @@
 
 
         <!-- Carousel Start -->
-        <!-- Bootstrap Carousel -->
-<div id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-            <img src="img/individualtuitioniqued.jpg" class="d-block w-100 carousel-img" alt="Best Teachers">
-            <div class="carousel-caption text-end">
-                <h2>Connect with the Best Teachers in 5 Mins</h2>
-                <p>For any grades, any subjects – expert guidance at your fingertips.</p>
-                <a href="https://wa.me/919778264143" class="btn btn-success">Book a Demo Now</a>
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-0">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative"> 
+                    <img class="img-fluid" src="img/onlinetuitionkuwait.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best Online School For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                        Empower your child with personalized tuition from IIT, NIT, and IIM alumni—designed for academic excellence and all-round growth.  
+                                        </p>
+                                    <a href="https://wa.me/919778264143" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">BOOK A DEMO CLASS</a>
+                                    <a href="school-subjects.html" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/individualtuitioniqued.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Empowering kids with essential life skills through fun and interactive classes. From communication to creativity, we nurture confidence and problem-solving abilities with engaging, age-appropriate activities.</p>
+                                    <a href="https://wa.me/919778264143" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="chess.html" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/webdevstudent.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Empowering kids with Coding and ai skills</p>
+                                    <a href="https://wa.me/919778264143" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="#" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight" id="openTechCourses">Our Classes</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-            <img src="img/individualtuitioniqued.jpg" class="d-block w-100 carousel-img" alt="Interactive Learning">
-            <div class="carousel-caption text-end">
-                <h2>Interactive & Fun Learning</h2>
-                <p>Live classes, personalized tutoring & hands-on experience.</p>
-                <a href="https://wa.me/919778264143" class="btn btn-primary">Join Now</a>
-            </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-            <img src="image3.jpg" class="d-block w-100 carousel-img" alt="Boost Exam Scores">
-            <div class="carousel-caption text-end">
-                <h2>Boost Your Exam Scores</h2>
-                <p>Master difficult subjects with expert strategies.</p>
-                <a href="https://wa.me/919778264143" class="btn btn-warning">Start Learning</a>
-            </div>
-        </div>
-    </div>
-    <!-- Controls -->
-    <a class="carousel-control-prev" href="#customCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </a>
-    <a class="carousel-control-next" href="#customCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
-</div>
+        <!-- Carousel End -->
+
+
 
 
         <!-- Carousel End -->
@@ -627,46 +646,7 @@ At Iqued Learning, we’re not just building learners-we’re shaping leaders, i
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-6.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">General Knowledge</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Rajani</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="https://wa.me/919778264143?text=Hello,%20I%20want%20to%20book%20a%20demo%20class!">Join</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>Flexible</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Mode:</h6>
-                                            <small>Online</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        
                 </div>
             </div>
         </div>
@@ -736,9 +716,8 @@ At Iqued Learning, we’re not just building learners-we’re shaping leaders, i
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Popular Teachers</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
-                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <h1 class="mb-3">Meet our Lead Mentors</h1>
+                    <p>ur lead mentors are experienced educators and industry professionals dedicated to nurturing young minds. With a passion for teaching and a commitment to innovation, they provide expert guidance, interactive learning, and personalized support to help students excel in their chosen fields.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -748,42 +727,60 @@ At Iqued Learning, we’re not just building learners-we’re shaping leaders, i
                                 <h3>Farhana</h3>
                                 <p>Cheif Learning Officer</p>
                                 <p>B.Tech EEE, NIT Calicut</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="img/IMG_0867.JPG" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                                <h6>Gouri</h6>
+                                <p>Maths, IIT-JEE</p>
+				<p>NIT Calicut</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+
+		    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="img/Swati-tmiqued.jpg" alt="">
                             <div class="team-text">
-                                <h3>Full Name</h3>
-                                <p>Designation</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                                <h6>Swati</h6>
+                                <p>Maths - IIT JEE</p>
+				<p>IITK </p>
+                               
                             </div>
                         </div>
                     </div>
+
+		     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="img/Helene-tmiqued.jpg" alt="">
+                            <div class="team-text">
+                                <h6>Helene</h6>
+                                <p>German</p>
+				<p>5+yr Industry Expert</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+		    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="img/Salma-tmiqued.jpg" alt="">
+                            <div class="team-text">
+                                <h6>Salma</h6>
+                                <p>Coding, 5+yrs Industry Expert</p>
+				<p>5+yrs Industry Expert</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+		
+                   
                 </div>
             </div>
         </div>
