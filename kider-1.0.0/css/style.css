@@ -404,7 +404,7 @@ h6,
     flex-direction: column;
     background: #FFFFFF;
     border: 17px solid var(--light);
-    border-radius: 50px;
+    border-radius: 250px;
     transition: .5s;
 }
 
