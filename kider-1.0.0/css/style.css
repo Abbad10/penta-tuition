@@ -412,6 +412,22 @@ h6,
     border-color: var(--primary);
 }
 
+@media (max-width: 768px) {
+    .team-item .team-text {
+        width: 180px;   /* Reduce circle size */
+        height: 180px;  /* Reduce circle size */
+        border: 10px solid var(--light);  /* Adjust border thickness */
+        border-radius: 180px;  /* Ensure it remains a circle */
+    }
+
+    .team-item .team-text h3,
+    .team-item .team-text p {
+        font-size: 14px;  /* Adjust text size for better fit */
+        text-align: center;
+    }
+}
+
+
 
 /*** Testimonial ***/
 .testimonial-carousel {
